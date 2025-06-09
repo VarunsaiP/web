@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple calculator</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var n1=parseFloat(prompt("Enter first number:"));
+        var operator=prompt("Enter operator(+,-,*,/)");
+        var n2=parseFloat(prompt("Enter second number:"));
+        var result;
+
+        document.write("First number:"+n1+"<br>");
+        document.write("operator:"+operator+"<br>");
+        document.write("second number:"+n2+"<br>");
+
+        if(operator==="+"){
+            result=n1+n2;
+        } else if (operator==="-"){
+            result=n1+n2;
+        } else if (operator==="*"){
+            result=n1*n2;
+        }else if (operator==="/"){
+            result=n2!=0?n1/n2:"(Enter divison is zero)";
+        }else{
+            result="invalid operator";
+        }
+        document.writeln("<strong>result "+result+"</strong>");
+    
+    </script>
+    
+</body>
+</html>
